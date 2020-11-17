@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel = "stylesheet" type = "text/css" href = "css/style.css">
+    <script type="text/javascript" src="./js/script.js"></script>
+</head>
+<body>
+
+    <div>
+
+        <header>
+          <div class="Menu">
+             <nav>
+                <ul>
+                  <li>Menu</li>
+                  <li>Leis</li>
+                  <li>Sobre-nos</li>
+                  <li>Detran</li>
+                </ul>
+             </nav>
+          </div>
+      </div>
+   
+      <center>
+        <div id="caixa">
+            <div id="cadastro">
+    
+               
+                    <legend id="Detrram">Detrram</legend>
+                    <table cellspacing="20" id="cad">
+                        <tr>
+                            <td>
+                                <label for="velMax">Velocidade maxima da via:</label>
+                            </td>
+                            <td>
+                                <input type="number" name="velMax" id="velMax" size="3" maxlength="5" placeholder="Km/h:"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="velCar">Velocidade atual:</label>
+                            </td>
+                            <td>
+                                <input type="number" id="velCar" name="velCar" size="3" maxlength="5" placeholder="Km/h:" onchange="confVel()"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="res">Resultado:</label>
+                            </td>
+                            <td>     
+                                <div id="res"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>  
+                                <label for="val">Valor da multa:</label>   
+                            </td>
+                            <td>
+                                <div id="val"></div>  
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="nome">Nome do condutor:</label>
+                            </td>
+                            <td>
+                                <input type="text" name="nome" id="nome" maxlength="30" size="20" placeholder="Ex. Maria Souza"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="car">Tipo de veículo:</label>
+                            </td>
+                            <td>
+                                <input type="text" name="car" id="nome" maxlength="30" size="20" placeholder="Ex. Moto/Carro"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="nCart">Nº carteira de motorista:</label>
+                            </td>
+                            <td>
+                                <input type="number" name="nCart" id="nCart" maxlength="15" size="15" placeholder="Ex. 09273619451"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                                <button type="button" onclick="window.print()">
+                                    IMPRIMIR
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+    
+             
+                    
+            </div>
+        </div>
+
+      </center>
+    
+</body>
+</html>
